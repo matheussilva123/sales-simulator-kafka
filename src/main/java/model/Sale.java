@@ -2,13 +2,20 @@ package model;
 
 import java.math.BigDecimal;
 
-public class sale {
+public class Sale {
 
     private Long operation;
     private Long client;
     private Integer quantityTickets;
     private BigDecimal totalValue;
     private String status;
+
+    public Sale(Long operation, Long client, Integer quantityTickets, BigDecimal totalValue) {
+        this.operation = operation;
+        this.client = client;
+        this.quantityTickets = quantityTickets;
+        this.totalValue = totalValue;
+    }
 
     public Long getOperation() {
         return operation;
